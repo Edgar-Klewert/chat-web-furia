@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .chat-message {
+    @apply mb-4 p-3 rounded-lg max-w-[80%];
+  }
+  
+  .user-message {
+    @apply bg-black text-white self-end;
+  }
+  
+  .bot-message {
+    @apply bg-[#F9C80E] text-black self-start;
+  }
+  
+  .furia-nav-link {
+    @apply px-4 py-2 text-white hover:text-[#F9C80E] transition-colors duration-300;
+  }
+  
+  .furia-nav-link.active {
+    @apply text-[#F9C80E] font-bold;
+  }
+}

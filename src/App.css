@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+  --furia-primary: #000000;
+  --furia-secondary: #FFFFFF;
+  --furia-accent: #F9C80E;
+  --furia-gray: #1E1E1E;
+  --furia-light-gray: #2D2D2D;
+  --furia-success: #00C853;
+  --furia-warning: #FF9100;
+  --furia-error: #FF3D00;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--furia-gray);
+  color: var(--furia-secondary);
+  margin: 0;
+  padding: 0;
+}
+
+.furia-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.furia-button {
+  background-color: var(--furia-accent);
+  color: var(--furia-primary);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.furia-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(249, 200, 14, 0.3);
+}
+
+.furia-button-outline {
+  background-color: transparent;
+  color: var(--furia-accent);
+  border: 2px solid var(--furia-accent);
+}
+
+.furia-button-outline:hover {
+  background-color: var(--furia-accent);
+  color: var(--furia-primary);
+}
+
+.furia-logo-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
